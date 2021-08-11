@@ -1,0 +1,95 @@
+
+added 209 packages, and audited 210 packages in 2s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+4 low severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> phase-1-first-class-functions@0.1.0 test
+> mocha -R mocha-multi --reporter-options nyan=-,json=.results.json
+
+ 0
+ 0
+ 0
+
+[4A[5C-
+[5C-
+[5C-
+[5C-
+[4A[6C_,------,
+[6C_|   /\_/\ 
+[6C^|__( - .-) 
+[6C  ""  "" 
+[4A 0
+ 1
+ 0
+
+[4A[5C-_
+[5C-_
+[5C-_
+[5C-_
+[4A[7C_,------,
+[7C_|  /\_/\ 
+[7C~|_( x .x) 
+[7C ""  "" 
+[4A 0
+ 2
+ 0
+
+[4A[5C-_-
+[5C-_-
+[5C-_-
+[5C-_-
+[4A[8C_,------,
+[8C_|   /\_/\ 
+[8C^|__( x .x) 
+[8C  ""  "" 
+[4A 0
+ 3
+ 0
+
+[4A[5C-_-_
+[5C-_-_
+[5C-_-_
+[5C-_-_
+[4A[9C_,------,
+[9C_|  /\_/\ 
+[9C~|_( x .x) 
+[9C ""  "" 
+[4A
+
+
+
+
+  0 passing (207ms)
+  3 failing
+
+  1) index
+       receivesAFunction(callback)
+         receives a function and calls it:
+     ReferenceError: receivesAFunction is not defined
+      at Context.<anonymous> (test/indexTest.js:10:7)
+      at processImmediate (node:internal/timers:464:21)
+
+  2) index
+       returnsANamedFunction()
+         "before all" hook:
+     ReferenceError: returnsANamedFunction is not defined
+      at Context.<anonymous> (test/indexTest.js:20:7)
+      at processImmediate (node:internal/timers:464:21)
+
+  3) index
+       returnsAnAnonymousFunction()
+         "before all" hook:
+     ReferenceError: returnsAnAnonymousFunction is not defined
+      at Context.<anonymous> (test/indexTest.js:36:7)
+      at processImmediate (node:internal/timers:464:21)
+
+
+
